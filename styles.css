@@ -1,3 +1,166 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  font-family: "DM sans", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin-top: 0;
+}
+
+h1 {
+  padding: 1rem;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  background-color: #fff2eb;
+}
+
+header,
+footer {
+  background-image: radial-gradient(
+    170.62% 50% at 50% 50%,
+    rgba(204, 176, 176, 0.56) 0%,
+    rgba(229, 198, 198, 0.37) 47.12%,
+    rgba(255, 220, 220, 0.18) 100%
+  );
+}
+
+header {
+  height: 30vh;
+}
+
+.header-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.header-heading h2 {
+  order: 1;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.header-heading h1 {
+  order: 2;
+  padding: 0;
+}
+
+footer {
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  padding-top: 2rem;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #f2e6e0;
+  padding: 1rem 1rem;
+  border-radius: 5%;
+}
+
+.project-card img {
+  border-radius: 5%;
+}
+
+.button-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.downloads {
+  justify-content: center;
+}
+
+.button-links a {
+  text-decoration: none;
+  color: black;
+  border: solid 1px;
+  border-radius: 0.9rem;
+  padding: 0.2rem 0.4rem;
+}
+
+.button-links a:hover {
+  background-color: #ccb0b090;
+}
+
+.about-section,
+.contact-section,
+.project-section {
+  margin: 0 1rem;
+  padding: 2rem 0;
+}
+
+.about-info img {
+  width: 100%;
+  height: 100%;
+  background-color: #ccb0b090;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.img-wrapper {
+  width: 90%;
+  padding-bottom: 90%;
+  height: 0;
+  position: relative;
+  margin: 1rem;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section a,
+.email {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+  margin: 0;
+}
