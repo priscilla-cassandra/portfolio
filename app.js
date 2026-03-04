@@ -3,7 +3,7 @@ const aboutNavigation = document.getElementById("about-navigation")
 const contactNavigation = document.getElementById("contact-navigation")
 
 function scrollToProjects(){
-    const projectSection = document.getElementById("project")
+    const projectSection = document.getElementById("projects")
     projectSection.scrollIntoView({
         behavior: "smooth"
     })
