@@ -3,9 +3,12 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "DM sans", sans-serif;
+  background-color: #fff2eb;
+  font-size: clamp(1rem, 3vw, 1.125rem);
 }
+
 h1,
 h2,
 h3 {
@@ -21,11 +24,33 @@ h1 {
   margin: 0;
   font-weight: 600;
   text-align: center;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.125rem, 5vw, 1.875rem);
+}
+
+h3 {
+  font-size: clamp(1.125rem, 5vw, 1.5rem);
+}
+.line-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+.line-header:before,
+.line-header:after {
+  content: "";
+  width: 60%;
+  border-bottom: 1px solid black;
+  margin: 0 0.5rem;
 }
 
 main {
   max-width: 1200px;
-  background-color: #fff2eb;
+  margin: 0 auto;
 }
 
 header,
@@ -40,6 +65,7 @@ footer {
 
 header {
   height: 30vh;
+  margin-bottom: 1rem;
 }
 
 .header-heading {
@@ -104,10 +130,13 @@ img {
   margin-top: 1rem;
   display: flex;
   gap: 0.5rem;
+  width: max-content;
 }
 
 .downloads {
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .button-links a {
@@ -126,7 +155,8 @@ img {
 .contact-section,
 .project-section {
   margin: 0 1rem;
-  padding: 2rem 0;
+  padding: 3rem 0;
+  max-width: 1200px;
 }
 
 .about-info img {
@@ -163,4 +193,64 @@ img {
 
 .contact-section p {
   margin: 0;
+}
+
+@media (min-width: 600px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 100%;
+  }
+  .project-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-info {
+    margin: 0 8rem;
+  }
+  .contact-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    font-size: large;
+  }
+  .contact-section a,
+  .email {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    height: 50vh;
+  }
+  ul {
+    justify-content: flex-end;
+    gap: 4rem;
+    padding: 2rem 12rem;
+  }
+  .header-heading {
+    height: 40vh;
+    align-items: flex-start;
+    margin-left: 20rem;
+  }
+  .about-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 4rem;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .about-info p {
+    line-height: 2rem;
+  }
+  .downloads {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
