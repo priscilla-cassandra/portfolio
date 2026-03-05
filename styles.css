@@ -64,7 +64,7 @@ footer {
 }
 
 header {
-  height: 30vh;
+  height: 35vh;
   margin-bottom: 1rem;
 }
 
@@ -273,7 +273,7 @@ img {
 
 @media (min-width: 992px) {
   header {
-    height: 50vh;
+    height: 60vh;
   }
   ul {
     justify-content: flex-end;
@@ -281,7 +281,7 @@ img {
     padding: 2rem 12rem;
   }
   .header-heading {
-    height: 40vh;
+    height: 30vh;
     align-items: flex-start;
     margin-left: 20rem;
   }
