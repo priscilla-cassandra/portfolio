@@ -18,7 +18,7 @@ The project can be viewed and run by cloning the repo to VSCode
 6. When prompted, click "Open" to open the cloned repository in VS Code
 
 ## Link to live website
-
+https://priscilla-cassandra.github.io/portfolio/
 
 ## Author
 **Name:** Priscilla C. Neeraas <br>
